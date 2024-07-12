@@ -4,72 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Your Name] - IT Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evSX huddled7lwJEjsozRDgLf/SYz6zYLmWYSjIkzWUexv4wt1UveQ46wXNqQzWXu" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>[Your Name]</h1>
-    <h2>IT Professional</h2>
+  <header class="container-fluid bg-light">
+    <div class="container py-3">
+      <h1>[Your Name]</h1>
+      <h2>IT Professional</h2>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="container-fluid sticky-top bg-dark">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <a href="#" class="text-white text-decoration-none fs-4">
+        [Your Name]
+      </a>
+      <button type="button" class="btn btn-outline-light me-2">About Me</button>
+      <button type="button" class="btn btn-outline-light">Skills</button>
+      <button type="button" class="btn btn-outline-light">Experience</button>
+      <button type="button" class="btn btn-outline-light">Certifications</button>
+      <button type="button" class="btn btn-outline-light">Blog</button>
+      <button type="button" class="btn btn-outline-light">Contact</button>
+    </div>
   </nav>
 
-  <main>
-    <section id="about">
+  <main class="container py-5">
+    <section id="about" class="mb-5">
       <h2>About Me</h2>
       <p>Introduce yourself and your passion for IT. Briefly highlight your skills and goals.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="mb-5">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        </ul>
+      <ul class="row row-cols-1 row-cols-md-2 g-4">
+        <li class="col">Skill 1</li>
+        <li class="col">Skill 2</li>
+        <li class="col">Skill 3</li>
+      </ul>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="mb-5">
       <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>[Job Title/Project Name] - [Company/Organization Name]</h3>
-        <h4>[Dates]</h4>
-        <p>Describe your responsibilities and accomplishments.</p>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h3>[Job Title/Project Name] - [Company/Organization Name]</h3>
+          <h4>[Dates]</h4>
+          <p>Describe your responsibilities and accomplishments.</p>
+        </div>
       </div>
-      </section>
-
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul class="certifications-list">
-        <li>[Certification Name] - [Issuing Organization]</li>
-        </ul>
     </section>
 
-    <section id="blog">
+    <section id="certifications" class="mb-5">
+      <h2>Certifications</h2>
+      <ul class="list-group">
+        <li class="list-group-item">[Certification Name] - [Issuing Organization]</li>
+      </ul>
+    </section>
+
+    <section id="blog" class="mb-5">
       <h2>Blog</h2>
       <p>Link to your blog hosted on another platform (e.g., WordPress, Medium) or showcase blog posts directly here if using a framework like Jekyll.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="mb-5">
       <h2>Contact</h2>
       <p>Provide your contact information (email, social media links) for potential employers or collaborators.</p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; [Your Name] - [Year]</p>
+  <footer class="container-fluid bg-dark text-light py-3">
+    <div class="container">
+      <p>&copy; [Your Name] - [Year]</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ٻOpLcu6xI30
+
 </body>
 </html>
